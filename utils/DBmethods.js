@@ -3,7 +3,7 @@ const OS = require('../models/OS');
 async function get(){
     const allOS = await OS.find();
 
-    return allOS || {}
+    return allOS || []
 }
 
 async function increase(name, location){
